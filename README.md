@@ -8,7 +8,7 @@ Throughout this project, we meticulously undertake feature extraction, model tra
 
 ## Methodologies
 
-This [notebook](https://github.com/ndhruv03/Exploring-Speaker-Recognition-Techniques/blob/main/speakerrecognition-combined-fa30a0.ipynb) has the code for all the following methodologies mentioned
+This [notebook](https://github.com/ndhruv03/Exploring-Speaker-Recognition-Techniques/blob/main/speakerrecognitioncombined.ipynb) has the code for all the following methodologies mentioned
 ### Gausian Mixture Models
 Gaussian Mixture Models (GMMs) are probabilistic models commonly used for clustering and density estimation tasks. In the context of speaker recognition, GMMs can be employed to model the distribution of speech features extracted from different speakers. Each speaker's speech characteristics can be represented as a mixture of Gaussian distributions, where each Gaussian component captures a particular aspect of the speaker's speech patterns.
 In the following code, we extract the Mel-Frequency Cepstral Coefficients (MFCCs) from audio files and for each speaker, a separate GMM is trained using the extracted MFCC features. The GMMs are initialized with three Gaussian components per speaker and are trained using the GaussianMixture class from scikit-learn. The trained GMMs are utilized to predict the speaker labels for the test set. For each test file, the log likelihood of the features given each speaker's GMM is computed, and the speaker with the highest likelihood is selected as the predicted speaker.
