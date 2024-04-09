@@ -28,7 +28,7 @@ We have also trained a Convolutional Neural Network on the extracted MFCC featur
 ## Results
 The test accuracies for various models are as follows:
 - Gaussian Mixture Models: 98.2%
-- Recurrent Neural Networks: 96.4%
+- Recurrent Neural Networks: 99.71%
 - Multi Layer Perceptron: 99.67%
 
 ## Conclusion
